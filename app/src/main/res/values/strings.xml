@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">M-Academic</string>
+
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="title_activity__monday">Activity_Monday</string>
+    <string name="title_activity__tuesday">Activity_Tuesday</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity__wednesday">Activity_Wednesday</string>
+    <string name="title_activity__thursday">Activity_Thursday</string>
+    <color name="colorDivider">#ebe9e7</color>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity__details">Activity_Details</string>
+    <string name="user_reg_email_client_chooser_title">Complete Action Using</string>
+</resources>

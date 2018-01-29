@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="googlemaps.com.searchrecyclerview">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name="com.orm.SugarApp"
+        android:allowBackup="true"
+        android:icon="@drawable/cademic"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity_Student_Login" />
+        <activity android:name=".Activity_Student_Signup" />
+        <activity android:name=".Activity_NoticeBoard" />
+        <activity android:name=".Activity_Student_Dashboard" />
+        <activity android:name=".Activity_SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity_Home" />
+        <activity
+            android:name=".Lectures.Activity_Monday"
+            android:label="Monday"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Lectures.Activity_Tuesday"
+            android:label="Tuesday"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Lectures.Activity_Wednesday"
+            android:label="Wednesday"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Lectures.Activity_Thursday"
+            android:label="Thursday"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Lectures.Activity_Friday"
+            android:label="Friday"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity_Assignments" />
+        <activity android:name=".Activity_lecturer_Login" />
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="m-cademic" />
+        <meta-data
+            android:name="VERSION"
+            android:value="5" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="googlemaps.com.searchrecyclerview" />
+
+        <activity android:name=".Lectures.Monday_Add_Data" />
+        <activity android:name=".Lectures.Tuesday_Add_Data" />
+        <activity android:name=".Lectures.Wednesday_Add_Data" />
+        <activity android:name=".Lectures.Thursday_Add_Data" />
+        <activity android:name=".Lectures.Friday_Add_Data" />
+        <activity android:name=".Lectures.Monday_Delete_Data" />
+        <activity android:name=".Lectures.Tuesday_Delete_Data" />
+        <activity android:name=".Lectures.Wednesday_Delete_Data" />
+        <activity android:name=".Lectures.Thursday_Delete_Data" />
+        <activity android:name=".Lectures.Friday_Delete_Data" />
+
+        <!-- Firebase Notifications -->
+        <service android:name=".Notifications.service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Notifications.service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- ./Firebase Notifications -->
+        <activity android:name=".Activity_Lecturer_Dashboard" />
+        <activity android:name=".Activity_Lecturer_Login" />
+        <activity android:name=".Activity_Lecturer_Signup"></activity>
+    </application>
+
+</manifest>

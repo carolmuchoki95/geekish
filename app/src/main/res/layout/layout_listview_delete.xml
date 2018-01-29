@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:id="@+id/delactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Activity"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/deltime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/delactivity"
+        android:layout_alignStart="@+id/delactivity"
+        android:layout_below="@+id/delactivity"
+        android:layout_marginTop="20dp"
+        android:hint="Date"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+
+        android:id="@+id/delvenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/deltime"
+        android:layout_alignStart="@+id/deltime"
+        android:layout_below="@+id/deltime"
+        android:layout_marginTop="20dp"
+        android:hint="Venue"
+        android:textColor="@color/colorBlack" />
+
+    <!-- <ImageView
+         android:id="@+id/delete"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:srcCompat="@android:drawable/ic_delete"
+         android:layout_below="@+id/txt_venue"
+         android:layout_alignRight="@+id/txt_venue"
+         android:layout_alignEnd="@+id/txt_venue"
+         android:layout_marginTop="36dp" />
+ -->
+    <Button
+        android:id="@+id/delete_record_list"
+        style="@style/button_style_home"
+        android:layout_width="150dp"
+        android:layout_below="@+id/delvenue"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:elevation="5dp"
+        android:text="Delete Row"
+        android:textAllCaps="false" />
+</RelativeLayout>

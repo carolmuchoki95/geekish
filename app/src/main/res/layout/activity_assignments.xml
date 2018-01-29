@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="googlemaps.com.searchrecyclerview.Activity_Home">
+
+        <ImageView
+            android:src="@drawable/cademic"
+            android:layout_marginTop="30dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/browse"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="#183951"
+            android:padding="12dp"
+            android:text="Submit assignment"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/check"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="#183951"
+            android:padding="12dp"
+            android:text="Check for new assignments"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+        />
+    </LinearLayout>
+</ScrollView>
